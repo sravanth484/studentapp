@@ -1,0 +1,10 @@
+<p>
+  dashboard
+</p>
+<ul *ngFor="let user of usrdata">
+  <li>Name: {{user.name}}</li>
+  <li>Country: {{user.country}}</li>
+  <li>State: {{user.state}}</li>
+  <li>City: {{user.state}}</li>
+</ul>
+<a routerLink='/' (click)="clearUserData()">Logout</a>
